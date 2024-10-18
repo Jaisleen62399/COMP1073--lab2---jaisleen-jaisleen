@@ -23,3 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     redInput.addEventListener('input', updateBackgroundColor);
     greenInput.addEventListener('input', updateBackgroundColor);
     blueInput.addEventListener('input', updateBackgroundColor);
+
+        // Initialize the background color when the page loads
+    updateBackgroundColor();
