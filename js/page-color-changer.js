@@ -10,3 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const red = redInput.value;
       const green = greenInput.value;
       const blue = blueInput.value;
+        
+      const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+      // Update the background color of the body
+      document.body.style.backgroundColor = rgbColor;
