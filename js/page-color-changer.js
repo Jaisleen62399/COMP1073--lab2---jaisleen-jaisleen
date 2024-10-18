@@ -6,3 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update the background color based on RGB input values
     function updateBackgroundColor() {
+        
+      const red = redInput.value;
+      const green = greenInput.value;
+      const blue = blueInput.value;
