@@ -12,5 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const blue = blueInput.value;
         
       const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+        
       // Update the background color of the body
       document.body.style.backgroundColor = rgbColor;
+        
+      // Update the display text showing the current color value
+      colorValueDisplay.textContent = `Current Color: ${rgbColor}`;
+
+        // Add event listeners to the range inputs
+    redInput.addEventListener('input', updateBackgroundColor);
+    greenInput.addEventListener('input', updateBackgroundColor);
+    blueInput.addEventListener('input', updateBackgroundColor);
